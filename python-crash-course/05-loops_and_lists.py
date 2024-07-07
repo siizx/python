@@ -32,9 +32,12 @@ print(f"sum(squares): {sum(squares)}")
 
 # List Comprehension: pag 59 - praticamente tutto condensatissimo
 cubes = [value**3 for value in range(1,11)]
-print(cubes)
+print(cubes) # output: [1, 8, 27, 64, 125, 216, 343, 512, 729, 1000]
 
-print(cubes[2:5])
+print(cubes[2:5]) # output: [27, 64, 125]
+# SE lasci uno dei 2 parametri vuoti va fino all'ultimo/inizia dal primo. esempio: [2:] o [:4] | e ovviamente fnziona coi soliti indici negativi es: [0:-2]
+
+###### pag 63
 
 
 
