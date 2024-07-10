@@ -37,16 +37,30 @@ print(cubes) # output: [1, 8, 27, 64, 125, 216, 343, 512, 729, 1000]
 print(cubes[2:5]) # output: [27, 64, 125]
 # SE lasci uno dei 2 parametri vuoti va fino all'ultimo/inizia dal primo. esempio: [2:] o [:4] | e ovviamente fnziona coi soliti indici negativi es: [0:-2]
 
-###### pag 63
+# copying a list:
+cubesCopy = cubes[:]
+print("cubesCopy = cubes[:] ->", end=" ")
+print(cubesCopy)
+print("Just writing 'cubesCopy = cubes' makes cubesCopy point to the already existing list 'cubes'")
 
 
+# Tuples | Tuple
+print("\nTuples (are like constants)")
+# esempio: rettangolo 200x50
+dimensions = (200,50)
+# !! per qualche motivo, questi valori sono costanti, quindi:
+#dimensions[0] = 250 # non funziona
+# i valori si accedono come in un array.
+print(dimensions[0])
+print(dimensions[1])
 
+print("print(dimensions[0]) ritornerebbe un errore.\nNon si possono modificare i singoli valori, ma si possono ridefinire direttamente le tuple intere, esempio: 'dimensions = (400,100)'")
+dimensions = (400,100)
+print("\nfor loop:")
+for dim in dimensions:
+    print(dim)
 
-
-
-
-
-
+print("\nIn python, programmers prefer 4 spaces rather than a '\\t'.")
 
 
 
