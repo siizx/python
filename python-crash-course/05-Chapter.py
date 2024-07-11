@@ -5,7 +5,7 @@
 #    \____\___/|_| |_|\__,_|_|\__|_|\___/|_| |_|\__,_|_|___/
 
 # Chapter 5
-# Page 72
+# Page 72 to 90
 
 
 
@@ -58,11 +58,17 @@ print(f" Your admission cost is ${price}.")
 
 
 print("\n# PIZZA:")
-requestedToppings = []
+toppings = ['mushrooms','olives','green peppers','pepperoni','pineapple','extra cheese']
+#requestedToppings = []
+requestedToppings = ['french fries','mushrooms','pepperoni']
 
 if requestedToppings:
     for requestedTopping in requestedToppings:
-        print(f"Adding {requestedTopping}...")
+        if requestedTopping in toppings:
+            print(f"Adding {requestedTopping}...")
+        else:
+            print(f"{requestedTopping.title()} are not available, sorry!")
     print("\nFinished making your pizza!")
 else:
     print("Are you sure you want a plain pizza?")
+
