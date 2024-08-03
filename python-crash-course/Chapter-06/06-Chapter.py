@@ -9,20 +9,25 @@
 # Page 91 to
 
 # Simple dictionary:
-print("# Simple Dictionary:")
+print("\n### SIMPLE DICTIONARY ###\n")
 
 #alien_0 = {} # crea un dizionario vuoto.
 alien_0 = {'color': 'green', 'points': 5}
-print(f"alien_0 -> 'color': {alien_0['color']}, 'points': {alien_0['points']}")
+print(f"#~~ alien_0 -> 'color': {alien_0['color']}, 'points': {alien_0['points']}")
+
+print("#~~ Adding x and y positions to alien_0...\n") #-------------------------------
 
 alien_0['x_position'] = 0
 alien_0['y_position'] = 25
 
+print("#~~ print(alien_0):\n") #-------------------------------
 print(alien_0)
 
+print("#~~ print(alien_0) (color changed):\n") #-------------------------------
 alien_0['color'] = 'yellow'
 print(alien_0)
 
+print("#~~ Move the alien:\n") #-------------------------------
 # Move the alien to the right.
 # Determine how far to move the alien based on its current speed.
 
@@ -38,55 +43,21 @@ else:
 
 # Update the alien's position:
 alien_0['x_position'] = alien_0['x_position'] + x_increment
-print(f"The new alien_0's x_position is {alien_0['x_position']}")
+print(f"#~~ The new alien_0's x_position is {alien_0['x_position']}")
 
+print("\n#~~ Deletion of key-value pair:\n") #-------------------------------
 # Deletion of a key-value pair
 alien_0['tentacle_penis_lenght_in_meters'] = 4
 print(alien_0)
 del alien_0['tentacle_penis_lenght_in_meters']
 print(alien_0)
 
-# Space line
-print("\n")
+print("\n") #-------------------------------
 
-
-favorite_languages = {
-        'jen': 'python',
-        'sarah': 'c',
-        'edward': 'ruby',
-        'phil': 'python',
-        }
 
 # get() to access values:
-print("print(alien_0['hight']) NON ESISTEi, ma con get(), possiamo assegnare ai valori inesistenti, un valore di default.\nPer esempio:")
+print("#~~ print(alien_0['height']) NON ESISTE\n    ma con get(), possiamo assegnare ai valori inesistenti,\n   un valore di default.\nPer esempio:")
 height_value = alien_0.get('height', 'No height value assigned.')
 print(height_value)
 
-
-# Space line
-print("\n")
-
-user_0 = {
-        'username': 'efermi',
-        'name': 'enrico',
-        'last': 'fermi',
-        }
-
-# Space line
-print("\n")
-
-for key, value in user_0.items():
-    print(f"\nKey: {key}")
-    print(f"Value: {value}")
-
-
-for n,l in favorite_languages.items():
-    print(f"\n{n.title()}'s favorite language is {l.title()}")
-
-# Space line
-print("\n")
-
-print("Looping though the keys is actually the default behavior when looping through a dictionary, so:\n'for name in favorite_languages:'\nand\n'for name in favorite_languages.keys():'\nhave the same output!\n")
-
-for k in favorite_languages.keys():
-    print(f"{k.title()}")
+print("\n") #-------------------------------
